@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    background-image: url("../images/wall.png");
+    
+    align-items: center;
+    height: 100vh;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 90px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 1rem ;
+    
+}
+
+
+/* vai deixar em linhas  */
+.panel{
+    
+    /* margin: auto auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 10%;
+    
+
+}
+
+.panel-row {
+    width: 100%;
+  }
+
+.square{
+    height: 12vh;
+    
+    border: 1px solid #000000;
+    background-color: #1aeaa5;
+}
+
+.enemy{
+    background-image: url('../images/actor-wreck-it-ralph-447066_large.jpg');
+    background-size: cover;
+    background-position: top;
+}
