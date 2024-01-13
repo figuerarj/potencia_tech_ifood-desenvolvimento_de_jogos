@@ -21,6 +21,28 @@
     
 }
 
+.menu-lives{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+    width: 30%;
+}
+.menu-score h2:nth-child(2),
+.menu-time h2:nth-child(2){
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.menu-lives h2{
+    font-size: 1rem;
+    margin-left: 0.3rem;
+}
+
+.player{
+    width: 50%;
+}
+
 
 /* vai deixar em linhas  */
 .panel{
