@@ -27,6 +27,7 @@
     align-items: center;
     /* padding: 1rem; */
     width: 30%;
+    flex-direction: column;
 }
 .menu-score h2:nth-child(2),
 .menu-time h2:nth-child(2){
@@ -37,6 +38,7 @@
 .menu-lives h2{
     font-size: 1rem;
     margin-left: 0.3rem;
+    
 }
 
 .player{
@@ -72,4 +74,19 @@
     background-image: url('../images/actor-wreck-it-ralph-447066_large.jpg');
     background-size: cover;
     background-position: top;
+}
+
+.button{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+
+button{
+    padding: .6rem;
+    border-radius: .6rem;
+    min-width: 20%;
+    min-height: 8vh;
+    font-size: 0.8rem;
 }
