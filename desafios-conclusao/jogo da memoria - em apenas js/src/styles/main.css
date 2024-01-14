@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #fc1e8a;
+    background: #caebe8;
     user-select: none;
 
 }
@@ -15,8 +15,13 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #fdeff9 100%);
+    background-color: #59aacf;
+    /* background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #fdeff9 100%); */
     padding: 40px 60px;
+    border-radius: 1em;
+    box-shadow: 10px 10px 18px -3px rgba(139, 174, 250, 0.90);
+    -webkit-box-shadow: 10px 10px 18px -3px rgba(5, 97, 151, 0.4);
+    -moz-box-shadow: 10px 10px 18px -3px rgba(7, 128, 158, 0.9);
 
 }
 
@@ -25,6 +30,8 @@ h2 {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    text-decoration: underline;
+    text-shadow:1px 1px 10px #035b85;
 }
 
 .reset {
@@ -38,12 +45,13 @@ h2 {
     letter-spacing: 0.1em;
     cursor: pointer;
     font-weight: 600;
+    border-radius: 1em;
 
 }
 
 .reset:active {
-    color: #ec38bc;
-    background-color: #500a2d;
+    color: #5eafe6;
+    background-color: #033064;
 }
 
 .game {
@@ -69,16 +77,23 @@ h2 {
     font-size: 3em;
     transform: rotateY(180deg);
     transition: 0.25s;
+    border-radius: 0.2em;
+    box-shadow: 10px 10px 18px -3px rgba(139, 174, 250, 0.90);
+    -webkit-box-shadow: 10px 10px 18px -3px rgba(5, 97, 151, 0.4);
+    -moz-box-shadow: 10px 10px 18px -3px rgba(7, 128, 158, 0.9);
+
 }
 
 .item::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: #404040;
+    background-image: url("../images/OIP.jpeg");
+    background-size: contain;
     transition: 0.25;
     transform: rotateY(0deg);
     backface-visibility: hidden;
+    border-radius: 0.2em;
 }
 
 .item.boxOpen {
@@ -90,10 +105,7 @@ h2 {
 }
 
 @media screen and (max-width: 576px) {
-    body {
-        background-color: lightgreen;
 
-    }
 
     .game {
         display: grid;
@@ -102,12 +114,18 @@ h2 {
         height: auto;
     }
 
-    .container{
+    .container {
         padding: 0;
+        margin: 5%;
     }
 
-    h2{
-        color:#000;
+    h2 {
+
         padding-top: 20px;
+    }
+
+    .reset {
+        width: 80%;
+        margin-bottom: 5%;
     }
 }
