@@ -15,6 +15,7 @@ body{
     
     background-color: black;
     font-family: "Poppins", sans-serif;
+    
 }
 
 .container header{
@@ -28,6 +29,7 @@ body{
 
 header h2{
  font-size: 1.6rem;
+ color: #fff;
 }
 
 header .column{
@@ -130,3 +132,14 @@ background-color: #fff;
     visibility: hidden;
     display: none;
 }
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 80%;
+    }
+
+    .container header .column{
+        width: 60%;
+    }
+  }
+  
